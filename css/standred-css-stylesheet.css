@@ -1,0 +1,29 @@
+body {
+    color: #000000;
+    background-color: #e8e8e8;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+.row {
+    margin: 8px -16px;
+  }
+.img1{
+    width: 50%;
+    height: 50%;
+    object-fit:scale-down;
+
+}
+.img2{
+    width: 400px;
+    height: 300px;
+    object-fit:scale-down;
+}
+  
