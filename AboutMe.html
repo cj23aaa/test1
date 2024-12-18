@@ -4,18 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/standred-css-stylesheet.css">
+  <link rel="stylesheet" href="css/navbarStyleSheet.css">
   <title> Christopher Jones - Portfolio</title>
 </head>
 <body>
   
   <header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href>AboutMe</a>
-        <a href="Technical interests.html">Technical interests</a>
-        <a href="Portfolio.html">Portfolio</a>
-        <a href="Project details page.html">Project details page</a>
-    </nav>
+        
+        <nav>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Technical interests.html">Technical interests</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Project details page.html">Project details page</a></li>
+          </ul>
+        <ul>
+          <li> <a href="#">AboutMe</a></li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="Technical interests.html">Technical interests</a></li>
+          <li class="hideOnMobile"><a href="Portfolio.html">Portfolio</a></li>
+          <li class="hideOnMobile"><a href="Project details page.html">Project details page</a></li>
+          <li class="menu-button"  onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
   </header>
   
     <h1>Hello, I am Christopher Jones </h1>
@@ -29,12 +41,13 @@
         as this area has many applications in the real world ranging from environmental, commercial, agricultural and use in the military.  
     </p>
   
+    <script src="js/navBar.js"></script>
   
 </body>
 
 <footer>
   <p>Name: Christopher Jones <br>
-    PhoneNumber: +447458196482 <br>
+    phonenumber: +447458196482 <br>
     <!--temporary phonenumber -->
     <a href="mailto:ChristopherJones1245@gmail.com">ChristopherJones1245@gmail.com</a></p>
   
