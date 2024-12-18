@@ -5,17 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/standred-css-stylesheet.css">
   <link rel="stylesheet" href="css/Portfolio-grid.css">
+  <link rel="stylesheet" href="css/navbarStyleSheet.css">
   <title> Christopher Jones - Portfolio</title>
 </head>
 <body>
   <header>
-    <nav>
-        <a href="index.html">Home</a>
-      <a href="AboutMe.html">AboutMe</a>
-      <a href>Technical interests</a>
-      <a href="Portfolio.html">Portfolio</a>
-      <a href="Project details page.html">Project details page</a>
-  </nav>
+    
+
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutMe.html">AboutMe</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="Project details page.html">Project details page</a></li>
+    </ul>
+  <ul>
+    <li> <a href="#">Technical interests</a></li>
+    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+    <li class="hideOnMobile"><a href="AboutMe.html">AboutMe</a></li>
+    <li class="hideOnMobile"><a href="Portfolio.html">Portfolio</a></li>
+    <li class="hideOnMobile"><a href="Project details page.html">Project details page</a></li>
+    <li class="menu-button"  onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  </ul>
+</nav>
   
   <div class="row">
     <div class="column3">
@@ -32,9 +45,9 @@
   <div class="row">
     <div class="column2">
       <div class="content">
-        <div class="img1">
+        
         <img src="images/Agriculture-ai-image.jpg" alt="Agriculture pic" style="width:100%">
-      </div>
+      
           <h1>Agriculture </h1>
         <p>In agriculture, ai can be used to track and manage plants so that they are planted in the correct season and that they have the correct resources they need to grow in a preferred manner to increase the yield of crops.<br>
           The use of ai can also manage the correct swapping of crops throughout the year.</p>
@@ -42,8 +55,8 @@
     </div>
       <div class="column2">
         <div class="content">
-          <div class="img1">
-            <img src="images/ai-art-comparison.jpg" alt="Socially pic" style="width:75%" style="height: 75%;"></div>
+          
+            <img src="images/ai-art-comparison.jpg" alt="Socially pic" style="width:75%" style="height: 75%;">
           <h1>Socially</h1>
           <p>Socially using ai you are able to get better targeted ads and recommended products for the user that match their interests.<br>
             It is also able to recommend content that matches the users interests and views that the user is more likely to enjoy or find engaging.While some businesses use these strategies to their benefit many people consider it to be unethical. Other issues people consider the use of ai to be unethical is use in artwork since artists are concerned 
@@ -61,9 +74,9 @@
   <div class="row">
     <div class="column2">
       <div class="content">
-        <div class="img1">
+        
           <img src="images/ai image.png" alt="Economically pic" style="width:100%" style="height: 75%;">
-      </div>
+      
           <h1>Economically </h1>
         <p>The use of ai economically can be good since it can track things like the stock market and crypto.<br>
           This is good since it is relatively accessible to everyday people so that means everyone has an entry into these markets that used to be dominated by people that are richer and so it provides everyone the same footing as each other.</p>
@@ -71,8 +84,8 @@
     </div>
       <div class="column2">
         <div class="content">
-          <div class="img1">
-            <img src="images/game-Screen-Shot.png" alt="game pic" style="width:75%" style="height: 75%;"></div>
+          
+            <img src="images/game-Screen-Shot.png" alt="game pic" style="width:75%" style="height: 75%;">
           <h1>Games development</h1>
           <p>My interest in games development comes from my love of video games and wondering how they work and how different game engines use different coding languages to implement features. <br>
             Personally I have only worked with Unity which uses c++ and I found it fun and existing since it was the first time I had ever used Unity and enjoyed learning how it works.</p>
@@ -83,13 +96,15 @@
  
 
   </header>
+  <script src="js/navBar.js"></script>
 </body>
 
 <footer>
   <p>Name: Christopher Jones <br>
-    PhoneNumber +447458196482 <br>
+    phonenumber: +447458196482 <br>
     <!--temporary phonenumber -->
     <a href="mailto:ChristopherJones1245@gmail.com">ChristopherJones1245@gmail.com</a></p>
   
 </footer>
 </html>
+
