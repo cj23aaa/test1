@@ -7,35 +7,55 @@
   
   <link rel="stylesheet" href="css/Portfolio-grid.css">
   <link rel="stylesheet" href="css/standred-css-stylesheet.css">
+  <link rel="stylesheet" href="css/navbarStyleSheet.css">
   
 </head>
 <body>
   <header>
-    <nav>
-        <a href="index.html">Home</a>
-      <a href="AboutMe.html">AboutMe</a>
-      <a href="Technical interests.html">Technical interests</a>
-      <a href="Portfolio.html">Portfolio</a>
-      <a href>Project details page</a>
-  </nav>
+   
+
+  <nav>
+  <ul class="sidebar">
+    <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <li><a href="index.html">Home</a></li>
+    <li> <a href="AboutMe.html">AboutMe</a></li>
+    <li><a href="Technical interests.html">Technical interests</a></li>
+    <li> <a href="Portfolio.html">Portfolio</a></li>
+  </ul>
+<ul>
+  <li> <a href="#">Project details page</a></li>
+  <li class="hideOnMobile"><a href="index.html">Home</a></li>
+  <li class="hideOnMobile"><a href="AboutMe.html">AboutMe</a></li>
+  <li class="hideOnMobile"><a href="Technical interests.html">Technical interests</a></li>
+  <li class="hideOnMobile"> <a href="Portfolio.html">Portfolio</a></li>
+  <li class="menu-button"  onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+</ul>
+</nav>
+<br>
+<h1>Drift racer details</h1>
+
+  
+  <a href="#DRTeam"> Drift Racer Team details </a><br>
+  <a href="#DRMenu"> Drift Racer menu details </a><br>
+  <a href="#DRMMap"> Drift Racer map details </a><br>
+
+<br>
     
     <h1>Project details</h1>
-    <h2>Drift racers project:</h2>
+    <h2 id="DriftRacer">Drift racers project:</h2>
     <p> Description of the project:<br>
       Drift racers was a game project that aimed to create a prototype for a race against time car game.This prototype was created using unity and the language c++:</p>
-      <video width="500" height="250" controls = "muted">
-        <source src="images/car-video.mp4" type="video/mp4">
-      </video>
-      <p>The above cinematic shows one of the cars created for this project going around the hell map we created. </p>
+      <img src="images/main-menu.png" alt="main-menu" style="width: 25%">
       <br>
 
-    <h3> Team formation:</h3>
+
+    <h3 id="DRTeam"> Team formation:</h3>
     <p> This project took place from january 22nd 2024 to april 19th 2023 so around 3 months from the teams formation to delivering a suitable prototype for the project.The team name we decided on was Awesome Gnome Softworks and was made of 4 people myself christopher jones who was incharge of communications, the minimap , all menus and the level management  development and implementation throughout the game.
      Jude who was our project leader and in charge of designing and creating the map, creating and implementing the car script and in charge of implementing relevant sound effects. Josh who was in charge of creating and developing a lap system, creating checkpoints where necessary throughout the maps. and in charge of creating the timer that the player had to beat.
      Tom who was in charge of creating all of the car models and other relevant particles on the tracks. Most of the team's communication took place in discord as it was an easy way to transfer files and provide updates to the whole team. 
   </p>
   <br>
-  <h4>Menus:</h4>
+  <h4 id="DRMenu">Menus:</h4>
   <p>As mentioned above I was in charge of the creation and development of all of the menus. These include the main menu, the map selection menu, car selection menu and the pause menu.</p>
   <div class="row">
     <div class="column">
@@ -74,22 +94,22 @@
     </div>
   </div>
   <br>
-  <h4>Mini map:</h4>
+  <h4 id="DRMMap">Mini map:</h4>
   <p>As mentioned above I was in charge of the mini maps creation. The mini map worked by taking a camera that was above the player car and directing it down at the player car but by also zooming out a lot to give the player a better view of the upcoming track. 
     The camera followed the player at the same speed as the player to keep it consistent. </p>
   <div class="row">
     <div class="column2">
       <div class="content">
-        <div class="img2">
-        <img src="images/mini-map.png" alt="" style="width:90%"></div>
+        
+        <img src="images/mini-map.png" alt="" style="width:90%">
         <h3>Mini-map</h3>
         <p>This is what the mini map looks like. it’s an overhead camera that gives the player a look at the obstacles ahead.</p>
       </div>
     </div>
     <div class="column2">
       <div class="content">
-        <div class="img2">
-        <img src="images/mini-map-code.png" alt="mini-map-code" style="width:100%"></div>
+        
+        <img src="images/mini-map-code.png" alt="mini-map-code" style="width:100%">
         <h3>Map selection menu</h3>
         <p>This is the code that allows the mini map camera to follow the player no matter what speed they are going at.</p>
       </div>
@@ -99,14 +119,14 @@
 
 
   </header>
+  <script src="js/navBar.js"></script>
 </body>
 
 <footer>
   <p>Name: Christopher Jones <br>
-    PhoneNumber +447458196482 <br>
+    phonenumber: +447458196482 <br>
     <!--temporary phonenumber -->
     <a href="mailto:ChristopherJones1245@gmail.com">ChristopherJones1245@gmail.com</a></p>
   
 </footer>
 </html>
-
