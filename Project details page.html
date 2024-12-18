@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/standred-css-stylesheet.css">
   <title> Christopher Jones - Portfolio</title>
+  
+  <link rel="stylesheet" href="css/Portfolio-grid.css">
+  <link rel="stylesheet" href="css/standred-css-stylesheet.css">
+  
 </head>
 <body>
   <header>
@@ -12,23 +15,89 @@
         <a href="index.html">Home</a>
       <a href="AboutMe.html">AboutMe</a>
       <a href="Technical interests.html">Technical interests</a>
-      <a href>Portfolio</a>
-      <a href="Project details page.html">Project details page</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <a href>Project details page</a>
   </nav>
-    <h1>My Technical interests is in Artificial intelligence </h1>
-    <p>As of right now I have not completed or started any AI projects but plan to in the future.<br>
-      However I have completed a timed car game called drift racers where the player races around different tracks in order to beat their own time.<br>
-      I completed this project with a group of friends and we were called Awesome Gnome Softworks as this was for a university unit. <br>
-      I was incharge of creating the menus and the minimap for the project. To find out more about the project click on this link.</p>
-      <a href>temp link</a><br>
-
-      <video src="images/car-video.mp4" width="500" height="250" controls = "muted">
+    
+    <h1>Project details</h1>
+    <h2>Drift racers project:</h2>
+    <p> Description of the project:<br>
+      Drift racers was a game project that aimed to create a prototype for a race against time car game.This prototype was created using unity and the language c++:</p>
+      <video width="500" height="250" controls = "muted">
+        <source src="images/car-video.mp4" type="video/mp4">
       </video>
-    
       <p>The above cinematic shows one of the cars created for this project going around the hell map we created. </p>
-    
+      <br>
 
-      
+    <h3> Team formation:</h3>
+    <p> This project took place from january 22nd 2024 to april 19th 2023 so around 3 months from the teams formation to delivering a suitable prototype for the project.The team name we decided on was Awesome Gnome Softworks and was made of 4 people myself christopher jones who was incharge of communications, the minimap , all menus and the level management  development and implementation throughout the game.
+     Jude who was our project leader and in charge of designing and creating the map, creating and implementing the car script and in charge of implementing relevant sound effects. Josh who was in charge of creating and developing a lap system, creating checkpoints where necessary throughout the maps. and in charge of creating the timer that the player had to beat.
+     Tom who was in charge of creating all of the car models and other relevant particles on the tracks. Most of the team's communication took place in discord as it was an easy way to transfer files and provide updates to the whole team. 
+  </p>
+  <br>
+  <h4>Menus:</h4>
+  <p>As mentioned above I was in charge of the creation and development of all of the menus. These include the main menu, the map selection menu, car selection menu and the pause menu.</p>
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="images/main-menu.png" alt="main-menu" style="width:100%">
+        <h3>Main menu</h3>
+        <p>This is the main menu. It has 3 buttons on it, the first one asking the player if they want to play the game which will then lead them to the map selection menu. 
+          The 2nd button will load a previous game in the event a player had to leave mid round. The 3rd button is to quit out of the game.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="images/map-selection.png" alt="map-selection" style="width:100%">
+        <h3>Map selection menu</h3>
+        <p>This menu has 4 options of maps that the player can pick from; however only the first map was designed and developed within the time frame for this project.
+           It has a yellow background but once you hover over a map button it will display a preview of the map.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="images/car-selection.png" alt="car-selection" style="width:100%">
+        <h3>Car selection menu</h3>
+        <p>This menu has no background to allow for the cars to be displayed. On this menu there are three buttons, one to pick the next car in the line up, 
+          one to select the previous car and one called select which chooses the car the player wants.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="images/pause-menu.png" alt="pause-menu" style="width:100%">
+        <h3>The pause menu</h3>
+        <p>This menu opens when you press esc on the keyboard and will freeze the timer and present 3 buttons. 
+          The first button will unfreeze time and resume the game, 
+          the second button will return the player to the menu and the third button will close the game. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h4>Mini map:</h4>
+  <p>As mentioned above I was in charge of the mini maps creation. The mini map worked by taking a camera that was above the player car and directing it down at the player car but by also zooming out a lot to give the player a better view of the upcoming track. 
+    The camera followed the player at the same speed as the player to keep it consistent. </p>
+  <div class="row">
+    <div class="column2">
+      <div class="content">
+        <div class="img2">
+        <img src="images/mini-map.png" alt="" style="width:90%"></div>
+        <h3>Mini-map</h3>
+        <p>This is what the mini map looks like. it’s an overhead camera that gives the player a look at the obstacles ahead.</p>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="content">
+        <div class="img2">
+        <img src="images/mini-map-code.png" alt="mini-map-code" style="width:100%"></div>
+        <h3>Map selection menu</h3>
+        <p>This is the code that allows the mini map camera to follow the player no matter what speed they are going at.</p>
+      </div>
+    </div>  
+  </div>
+
+
+
   </header>
 </body>
 
@@ -40,3 +109,4 @@
   
 </footer>
 </html>
+
