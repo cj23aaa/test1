@@ -26,4 +26,12 @@ h1 {
     height: 300px;
     object-fit:scale-down;
 }
+
+footer{
+  text-align: center;
+  padding: 3px;
+  background-color: #e8e8e8;
+  color: #000000;
+  border-style: groove;
+}
   
